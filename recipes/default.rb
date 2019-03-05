@@ -7,8 +7,8 @@
 
 # only run on supported platforms
 if %w( aix amazon centos fedora freebsd debian gentoo solaris oracle redhat suse opensuse opensuseleap ubuntu zlinux arch_linux ).include? node['platform']
-  node['chef_profiled']['scripts'].each do |script, lines|
-    template "/etc/profile.d/#{script}.sh" do
+  node['chef_profiled']['scripts'].each do |name, lines|
+    template "/etc/profile.d/#{name}.sh" do
       source 'script.sh.erb'
       owner 'root'
       group 'root'
