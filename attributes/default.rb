@@ -1,0 +1,1 @@
+default['chef_profiled']['scripts'] = []
