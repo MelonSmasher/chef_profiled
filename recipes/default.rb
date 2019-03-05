@@ -14,6 +14,7 @@ if %w( aix amazon centos fedora freebsd debian gentoo solaris oracle redhat suse
       group 'root'
       mode '0755'
       variables(lines: lines)
+      action :create
     end
   end
 else
