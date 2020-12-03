@@ -32,12 +32,12 @@ Default Value:
 Ruby usage:
 
 ```ruby
-node['chef_profiled']['scripts'] = [
+node['chef_profiled']['scripts'] = {
   'testscript' => [
     'export SOMEVAR = "SOMEVAL";',
     'export SOMEVAR2 = "SOMEVAL2";'
   ]
-]
+}
 ```
 
 JSON usage:
